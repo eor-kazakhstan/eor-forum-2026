@@ -3,173 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>National EOR Forum 2026 — Astana, Kazakhstan</title>
-<meta name="description" content="The National Forum on Enhanced Oil Recovery 2026. August 27–28, Rixos President Astana, Kazakhstan. From Field Discovery to Maximum Resource Recovery.">
+<title>Travel to Astana — National EOR Forum 2026</title>
+<meta name="description" content="Practical travel information for the National EOR Forum 2026 in Astana, Kazakhstan — visa, flights, hotel, weather and local tips.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/_shared.css">
 <style>
-/* ── HOME-SPECIFIC ──────────────────────────────────────────── */
 body {
   background-image:
-    radial-gradient(ellipse 90% 60% at 50% -5%, rgba(200,146,42,.09) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(0,53,112,.35) 0%, transparent 55%);
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(200,146,42,.07) 0%, transparent 60%);
+}
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 48px; }
+.info-card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: var(--r); padding: 24px 22px; box-shadow: var(--shadow);
+}
+.info-card-icon { font-size: 1.6rem; margin-bottom: 12px; }
+.info-card-title { font-weight: 700; font-size: 1rem; color: var(--white); margin-bottom: 10px; }
+.info-card-body { font-size: .88rem; color: var(--text-muted); line-height: 1.75; }
+.info-card-body strong { color: var(--text); }
+.info-card-body a { color: var(--gold); text-decoration: none; }
+.info-card-body a:hover { color: var(--gold-light); }
+
+.tip-list { list-style: none; }
+.tip-list li {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 13px 0; border-bottom: 1px solid var(--card-border);
+  font-size: .9rem; color: var(--text-muted); line-height: 1.6;
+}
+.tip-list li:last-child { border-bottom: 0; }
+.tip-list li strong { color: var(--text); }
+.tip-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+
+.airline-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.airline-tag {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: var(--r-sm); padding: 8px 14px;
+  font-size: .86rem; color: var(--text);
 }
 
-/* Hero */
-.hero {
-  padding: 64px 0 56px;
-  border-bottom: 1px solid var(--gold-rule);
-  margin-bottom: 56px;
+.weather-row {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1px;
+  background: var(--gold-rule); border: 1px solid var(--gold-rule);
+  border-radius: var(--r); overflow: hidden; margin-bottom: 48px;
 }
-.hero-kicker {
-  display: flex; align-items: center; gap: 10px;
-  font-size: .72rem; font-weight: 700;
-  letter-spacing: .18em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 20px;
+.weather-cell {
+  background: var(--navy); padding: 18px 14px; text-align: center;
 }
-.hero-kicker::before {
-  content: ""; display: block;
-  width: 28px; height: 2px; background: var(--gold);
-}
-.hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 6vw, 3.6rem);
-  font-weight: 700; line-height: 1.05;
-  color: var(--white); letter-spacing: -.02em;
-  margin-bottom: 12px;
-}
-.hero h1 em { color: var(--gold-light); font-style: normal; }
-.hero-tagline {
-  font-size: 1.05rem; color: var(--text-muted);
-  font-style: italic; margin-bottom: 28px;
-}
-.hero-meta {
-  display: flex; flex-wrap: wrap; gap: 8px 28px;
-  font-size: .9rem; color: var(--text-muted);
-  margin-bottom: 36px;
-}
-.hero-meta strong { color: var(--text); }
-.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.weather-month { font-size: .75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 6px; }
+.weather-temp { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; color: var(--gold-light); }
+.weather-desc { font-size: .78rem; color: var(--text-muted); margin-top: 4px; }
 
-/* Stats row */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1px;
-  background: var(--gold-rule);
-  border: 1px solid var(--gold-rule);
-  border-radius: var(--r);
-  overflow: hidden;
-  margin-bottom: 56px;
-}
-.stat {
-  background: var(--navy);
-  padding: 24px 20px;
-  text-align: center;
-}
-.stat-num {
-  font-family: "Playfair Display", serif;
-  font-size: 2.2rem; font-weight: 700;
-  color: var(--gold-light); line-height: 1;
-  margin-bottom: 6px;
-}
-.stat-label {
-  font-size: .78rem; color: var(--text-muted);
-  text-transform: uppercase; letter-spacing: .1em;
-}
-
-/* About */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 56px;
-}
-.about-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: var(--r);
-  padding: 28px;
-  box-shadow: var(--shadow);
-}
-.about-card-icon { font-size: 1.8rem; margin-bottom: 14px; }
-.about-card-title {
-  font-weight: 700; font-size: 1.05rem;
-  color: var(--white); margin-bottom: 8px;
-}
-.about-card-body { font-size: .9rem; color: var(--text-muted); line-height: 1.7; }
-
-/* Programme */
-.programme { margin-bottom: 56px; }
-.day-block { margin-bottom: 28px; }
-.day-badge {
-  display: inline-block;
-  font-family: "Playfair Display", serif;
-  font-style: italic; font-size: 1rem;
-  color: var(--gold-light);
-  background: var(--gold-soft);
-  border: 1px solid var(--gold-rule);
-  border-radius: 999px;
-  padding: 4px 18px 5px;
-  margin-bottom: 12px;
-}
-.session-row {
-  display: flex; gap: 14px; align-items: flex-start;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--card-border);
-}
-.session-row:last-child { border-bottom: 0; }
-.session-time {
-  font-size: .82rem; font-weight: 600;
-  color: var(--text-dim); white-space: nowrap;
-  min-width: 90px; padding-top: 2px;
-}
-.session-name {
-  font-weight: 600; font-size: .95rem;
-  color: var(--text); margin-bottom: 2px;
-}
-.session-topics {
-  font-size: .82rem; color: var(--text-muted); line-height: 1.5;
-}
-
-/* Organisers */
-.org-row {
-  display: flex; flex-wrap: wrap; gap: 12px;
-  margin-bottom: 56px;
-}
-.org-pill {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: var(--r-sm);
-  padding: 12px 20px;
-  font-size: .88rem; font-weight: 600; color: var(--text);
-}
-
-/* CTA banner */
-.cta-banner {
-  background: linear-gradient(135deg, var(--navy-light) 0%, rgba(200,146,42,.12) 100%);
-  border: 1px solid var(--gold-rule);
-  border-radius: var(--r);
-  padding: 36px 32px;
-  display: flex; align-items: center;
-  justify-content: space-between; gap: 24px;
-  flex-wrap: wrap;
-  margin-bottom: 56px;
-}
-.cta-banner-text h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4rem; color: var(--white);
-  margin-bottom: 6px;
-}
-.cta-banner-text p { font-size: .9rem; color: var(--text-muted); }
-.cta-banner-btns { display: flex; gap: 10px; flex-wrap: wrap; }
-
-@media (max-width: 680px) {
-  .about-grid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: 1fr 1fr; }
-  .cta-banner { flex-direction: column; }
+@media (max-width: 640px) {
+  .info-grid { grid-template-columns: 1fr; }
+  .weather-row { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -178,181 +66,149 @@ body {
 
 <div class="wrap">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-kicker">Astana, Kazakhstan · August 2026</div>
-    <h1>National Forum on<br><em>Enhanced Oil Recovery</em></h1>
-    <p class="hero-tagline">«From Field Discovery to Maximum Resource Recovery»</p>
-    <div class="hero-meta">
-      <span>📅 <strong>August 27–28, 2026</strong></span>
-      <span>📍 <strong>Rixos President Astana</strong></span>
-      <span>🏛 <strong>Ministry of Energy of the Republic of Kazakhstan</strong></span>
-    </div>
-    <div class="hero-ctas">
-      <a href="/register" class="btn-gold">Register now →</a>
-      <a href="#programme" class="btn-ghost">View programme</a>
-    </div>
+  <section class="page-hero">
+    <div class="page-eyebrow">Practical Information</div>
+    <h1 class="page-title">Travelling to <span>Astana</span></h1>
+    <p class="page-subtitle">Everything you need to plan your trip to Kazakhstan for the National EOR Forum, August 27–28, 2026 at the Rixos President Astana.</p>
   </section>
 
-  <!-- STATS -->
-  <div class="stats">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Days</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Sessions</div></div>
-    <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Operators</div></div>
-    <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Attendees</div></div>
-    <div class="stat"><div class="stat-num">30+</div><div class="stat-label">Speakers</div></div>
-    <div class="stat"><div class="stat-num">1%</div><div class="stat-label">RF target gain</div></div>
-  </div>
-
-  <!-- ABOUT -->
+  <!-- VENUE -->
   <section class="section">
-    <div class="section-label">About the Forum</div>
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="about-card-icon">🎯</div>
-        <div class="about-card-title">Strategic objective</div>
-        <div class="about-card-body">Shape a national strategy for enhancing oil recovery and unlocking residual hydrocarbon reserves in Kazakhstan through 2030. Even a 1% increase in recovery factor across major mature fields could unlock tens of millions of tons of additional oil.</div>
+    <div class="section-label">Venue</div>
+    <div class="card" style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
+      <div style="flex:1;min-width:220px">
+        <div style="font-weight:700;font-size:1.05rem;color:var(--white);margin-bottom:6px">Rixos President Astana</div>
+        <div style="font-size:.9rem;color:var(--text-muted);line-height:1.8">
+          📍 Kunayeva 7, Astana 010000, Kazakhstan<br>
+          🌐 <a href="https://www.rixos.com/en/hotel/rixos-president-astana" target="_blank" style="color:var(--gold)">rixos.com</a><br>
+          📞 +7 7172 999 000
+        </div>
+        <div style="margin-top:14px;font-size:.84rem;color:var(--text-dim)">5-star hotel in the heart of Astana's government district. Walking distance from the Bayterek monument and the main ministries.</div>
       </div>
-      <div class="about-card">
-        <div class="about-card-icon">🤝</div>
-        <div class="about-card-title">Who attends</div>
-        <div class="about-card-body">All oil and gas operators, design institutes, scientific organisations, international and local service companies, global EOR experts, CCED members, industry associations, geologists and reservoir engineers.</div>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">📋</div>
-        <div class="about-card-title">Key outcomes</div>
-        <div class="about-card-body">Adoption of the Astana Declaration on EOR. List of priority fields. Formation of a permanent EOR working group. A pilot operations programme for 2027–2030. Proposals to the Subsoil Code to incentivise EOR implementation.</div>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">🗺</div>
-        <div class="about-card-title">2027–2030 Roadmap</div>
-        <div class="about-card-body">The Forum anchors a four-stage national roadmap: inventory of residual reserves, launch of EOR test pilots, introduction of legislative incentives, and full-scale digital monitoring and AI integration across assets.</div>
-      </div>
+      <a href="https://maps.google.com/?q=Rixos+President+Astana" target="_blank" class="btn-ghost" style="flex-shrink:0;align-self:flex-start">📍 Open in Maps →</a>
     </div>
   </section>
 
-  <!-- PROGRAMME -->
-  <section class="section programme" id="programme">
-    <div class="section-label">Programme</div>
-
-    <div class="day-block">
-      <div class="day-badge">Day 1 — Wednesday, 27 August</div>
-      <div class="card">
-        <div class="session-row">
-          <div class="session-time">09:00–10:30</div>
-          <div>
-            <div class="session-name">Plenary Session — The Future of Kazakhstan's Oil Production</div>
-            <div class="session-topics">Minister of Energy · Major operator executives · World EOR experts · CCED veterans</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">11:00–13:00</div>
-          <div>
-            <div class="session-name">Session 1 — Global EOR Technologies</div>
-            <div class="session-topics">Polymer flooding · Chemical EOR (SP, ASP, AP) · Gas EOR (CO₂, N₂, WAG, SWAG) · Thermal EOR · Combined EOR · Intelligent fields</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">14:00–17:00</div>
-          <div>
-            <div class="session-name">Session 2 — Oil Production Stimulation Methods</div>
-            <div class="session-topics">Conformance control · Water shut-off · Advanced well completion · Hydraulic fracturing · Acid treatments · Horizontal wells & sidetracks</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">All day</div>
-          <div>
-            <div class="session-name">EOR Expo — Technology Exhibition</div>
-            <div class="session-topics">EOR technologies · Digital & software solutions · Reservoir modelling · EOR equipment & chemicals · Core analysis · Laboratory R&D</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="day-badge">Day 2 — Thursday, 28 August</div>
-      <div class="card">
-        <div class="session-row">
-          <div class="session-time">09:00–12:00</div>
-          <div>
-            <div class="session-name">EOR Hackathon — Practical Solutions for Kazakhstan's Mature Fields</div>
-            <div class="session-topics">Up to 10 operators present pilot assets · EOR teams deliver screening, implementation concept, lab programme, incremental production forecast and economic assessment</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">13:00–14:00</div>
-          <div>
-            <div class="session-name">Session 4 — Digital Field Development</div>
-            <div class="session-topics">Artificial intelligence · Digital core · Digital twins · Automated production management · Predictive analysis</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">14:30–16:00</div>
-          <div>
-            <div class="session-name">Session 5 — Hard-to-recover Reserves</div>
-            <div class="session-topics">Carbonate reservoirs · Low permeability formations · Heavy and extra-heavy oil · Deep reservoirs</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">16:00–17:00</div>
-          <div>
-            <div class="session-name">Ministry of Energy Roundtable</div>
-            <div class="session-topics">National Programme for Increasing RF by 2030 · Regulatory incentives · Funding mechanisms · Adoption of the Astana Declaration</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ORGANISERS -->
+  <!-- VISA -->
   <section class="section">
-    <div class="section-label">Organised by</div>
-    <div class="org-row">
-      <div class="org-pill">🏛 Ministry of Energy of the Republic of Kazakhstan</div>
-      <div class="org-pill">⚡ Association of Legal Entities «KAZENERGY»</div>
-      <div class="org-pill">🔬 CCED RoK — 30th Anniversary</div>
-    </div>
-  </section>
-
-  <!-- CTA BANNER -->
-  <div class="cta-banner">
-    <div class="cta-banner-text">
-      <h3>Join the Forum</h3>
-      <p>Register as a speaker, attendee, or explore sponsorship and exhibition opportunities.</p>
-    </div>
-    <div class="cta-banner-btns">
-      <a href="/register" class="btn-gold">Register now →</a>
-      <a href="/sponsor" class="btn-ghost">Sponsor / Exhibit</a>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <section class="section">
-    <div class="section-label">Contact</div>
+    <div class="section-label">Visa &amp; Entry</div>
     <div class="card">
-      <div style="display:flex;flex-wrap:wrap;gap:28px">
-        <div>
-          <div style="font-size:.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px">Technical Programme & EOR Expo</div>
-          <div style="font-weight:600;color:var(--white);margin-bottom:3px">Dr. Marat Sagyndikov</div>
-          <div style="font-size:.9rem;color:var(--text-muted)">
-            📧 <a href="mailto:sagyndikov.marat.s@gmail.com" style="color:var(--gold)">sagyndikov.marat.s@gmail.com</a><br>
-            📱 <a href="https://wa.me/77019797555" style="color:var(--gold)">+7 701 979 7555</a> (WhatsApp)
-          </div>
+      <ul class="tip-list">
+        <li>
+          <span class="tip-icon">✈️</span>
+          <div><strong>Visa-free access</strong> — Citizens of 60+ countries can enter Kazakhstan visa-free for 30 days, including the EU, UK, USA, Canada, Japan, South Korea, UAE, and most CIS states. Check the full list at <a href="https://www.gov.kz" target="_blank" style="color:var(--gold)">gov.kz</a>.</div>
+        </li>
+        <li>
+          <span class="tip-icon">📄</span>
+          <div><strong>eVisa available</strong> — For countries not on the visa-free list, an electronic visa can be obtained at <a href="https://evisa.mfa.gov.kz" target="_blank" style="color:var(--gold)">evisa.mfa.gov.kz</a>. Processing time is typically 3–5 business days. Cost: USD 25–60.</div>
+        </li>
+        <li>
+          <span class="tip-icon">🛂</span>
+          <div><strong>Registration</strong> — Foreign nationals must register within 3 working days of arrival. Hotels register guests automatically. If staying privately, register at the local migration service office.</div>
+        </li>
+        <li>
+          <span class="tip-icon">🩺</span>
+          <div><strong>Health requirements</strong> — No vaccinations currently required. Travel insurance with medical coverage is strongly recommended.</div>
+        </li>
+        <li>
+          <span class="tip-icon">⚠️</span>
+          <div><strong>Check early</strong> — Visa requirements can change. Always verify with the <a href="https://www.mfa.gov.kz" target="_blank" style="color:var(--gold)">Kazakhstan Ministry of Foreign Affairs</a> or your nearest Kazakhstan embassy before travelling.</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FLIGHTS -->
+  <section class="section">
+    <div class="section-label">Getting to Astana</div>
+    <div class="card">
+      <div style="font-weight:700;color:var(--white);margin-bottom:8px">Nursultan Nazarbayev International Airport (NQZ)</div>
+      <div style="font-size:.88rem;color:var(--text-muted);margin-bottom:16px">Located 15 km south of the city centre. Taxi to Rixos: ~20 min, ~USD 10–15.</div>
+      <ul class="tip-list">
+        <li><span class="tip-icon">🇰🇿</span><div><strong>Air Astana</strong> — flag carrier with direct routes from London, Frankfurt, Amsterdam, Dubai, Istanbul, Moscow, Beijing, Seoul, Delhi and many more.</div></li>
+        <li><span class="tip-icon">🌍</span><div><strong>FlyArystan</strong> — low-cost subsidiary of Air Astana. Regional routes across Central Asia and Russia.</div></li>
+        <li><span class="tip-icon">🔗</span><div><strong>Connections via hub cities</strong> — Almaty (TSE hub, 1h flight), Istanbul (IST), Dubai (DXB), Frankfurt (FRA), and Moscow (SVO/DME) all have strong onward connections to Astana.</div></li>
+      </ul>
+      <div style="margin-top:14px;font-size:.84rem;color:var(--text-dim)">Book early — August is peak summer travel season in the region. Air Astana typically releases fares 6–9 months in advance.</div>
+    </div>
+  </section>
+
+  <!-- HOTEL -->
+  <section class="section">
+    <div class="section-label">Accommodation</div>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-card-icon">🏨</div>
+        <div class="info-card-title">Rixos President Astana (venue)</div>
+        <div class="info-card-body">
+          The forum venue. <strong>Book directly</strong> via <a href="https://www.rixos.com" target="_blank">rixos.com</a> and mention the EOR Forum 2026 for potential group rates.<br><br>
+          <strong>Rate:</strong> ~USD 180–250/night (estimate)
         </div>
-        <div>
-          <div style="font-size:.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px">Partnership & Sponsorship</div>
-          <div style="font-weight:600;color:var(--white);margin-bottom:3px">KAZENERGY Secretariat</div>
-          <div style="font-size:.9rem;color:var(--text-muted)">Contact via the <a href="/sponsor" style="color:var(--gold)">Sponsor page</a></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">🏩</div>
+        <div class="info-card-title">Nearby alternatives</div>
+        <div class="info-card-body">
+          <strong>Hilton Astana</strong> — 5★, 10 min walk<br>
+          <strong>Marriott Astana</strong> — 5★, 12 min walk<br>
+          <strong>InterContinental Astana</strong> — 5★, 8 min walk<br>
+          <strong>Hotel Kazakhstan Astana</strong> — 4★, budget-friendly<br><br>
+          All within 1–2 km of the venue.
         </div>
       </div>
     </div>
+    <div class="card">
+      <div style="font-size:.86rem;color:var(--text-muted)">💡 <strong style="color:var(--text)">Book accommodation early.</strong> Astana hosts numerous government and industry events in August. Hotel availability fills up quickly, especially at 5-star properties near the government district.</div>
+    </div>
   </section>
+
+  <!-- WEATHER -->
+  <section class="section">
+    <div class="section-label">Weather in August</div>
+    <div class="weather-row">
+      <div class="weather-cell"><div class="weather-month">Average high</div><div class="weather-temp">29°C</div><div class="weather-desc">Warm &amp; sunny</div></div>
+      <div class="weather-cell"><div class="weather-month">Average low</div><div class="weather-temp">15°C</div><div class="weather-desc">Cool evenings</div></div>
+      <div class="weather-cell"><div class="weather-month">Humidity</div><div class="weather-temp">Low</div><div class="weather-desc">Dry continental</div></div>
+    </div>
+    <div class="card">
+      <ul class="tip-list">
+        <li><span class="tip-icon">☀️</span><div>August is one of Astana's best months — long sunny days (16h daylight), low humidity, minimal rain. Light summer clothing is fine during the day.</div></li>
+        <li><span class="tip-icon">🧥</span><div>Evenings can drop to 12–15°C. Bring a light jacket for outdoor evenings and for heavily air-conditioned conference rooms.</div></li>
+        <li><span class="tip-icon">🌬️</span><div>Astana is known for wind. A windbreaker is useful if you plan to explore the city on foot.</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LOCAL TIPS -->
+  <section class="section">
+    <div class="section-label">Local tips</div>
+    <div class="card">
+      <ul class="tip-list">
+        <li><span class="tip-icon">💱</span><div><strong>Currency:</strong> Kazakhstani Tenge (KZT). ~1 USD ≈ 460 KZT (check current rate). ATMs widely available. Major hotels accept USD/EUR/cards. Exchange at airport or banks for best rates — street exchangers should be avoided.</div></li>
+        <li><span class="tip-icon">📱</span><div><strong>SIM card:</strong> Buy a local SIM on arrival at the airport (Kcell, Beeline, Tele2). Data is cheap — ~1 USD for several GB. Your phone must be unlocked.</div></li>
+        <li><span class="tip-icon">🚕</span><div><strong>Transport:</strong> Yandex Go (Yandex Taxi) works well and is inexpensive. Uber is also available. Metered taxis from the street are fine too — agree the price before getting in.</div></li>
+        <li><span class="tip-icon">🕐</span><div><strong>Time zone:</strong> Astana is UTC+5 (no daylight saving). Plan your calls and connections accordingly.</div></li>
+        <li><span class="tip-icon">🗣</span><div><strong>Language:</strong> Kazakh and Russian are official languages. English is spoken at most hotels and the conference venue. Google Translate works well offline for Kazakh and Russian.</div></li>
+        <li><span class="tip-icon">🍽</span><div><strong>Food:</strong> Astana has excellent Central Asian cuisine — try beshbarmak (meat and noodles) and samsa (baked pastries). The EXPO area and government district have good international restaurants. Hotel restaurants are reliable but pricey.</div></li>
+        <li><span class="tip-icon">🏛</span><div><strong>Worth visiting:</strong> Bayterek tower (iconic landmark, 5 min from venue), the Palace of Peace and Reconciliation (pyramid), Khan Shatyr entertainment centre, and the futuristic EXPO 2017 district. Astana's architecture is genuinely spectacular.</div></li>
+        <li><span class="tip-icon">🔌</span><div><strong>Power:</strong> Type C/F plugs, 220V/50Hz. European adapters work fine. Bring a universal adapter if coming from the UK, US or Asia.</div></li>
+        <li><span class="tip-icon">💊</span><div><strong>Pharmacy:</strong> Well-stocked pharmacies throughout the city. Basic medications widely available without prescription.</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="card" style="text-align:center;padding:36px;background:linear-gradient(135deg,var(--navy-light),rgba(200,146,42,.1))">
+    <div style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--white);margin-bottom:8px">Ready to join us in Astana?</div>
+    <div style="font-size:.9rem;color:var(--text-muted);margin-bottom:20px">Register now to secure your place at Kazakhstan's national EOR Forum.</div>
+    <a href="/register" class="btn-gold">Register →</a>
+  </div>
 
 </div>
 
 <footer class="site-footer">
   National Forum on Enhanced Oil Recovery 2026 · Rixos President Astana, Kunayeva 7, Astana, Kazakhstan<br>
-  Organised by the Ministry of Energy of the Republic of Kazakhstan & KAZENERGY
+  Organised by the Ministry of Energy of the Republic of Kazakhstan &amp; KAZENERGY
 </footer>
 
 </body>
