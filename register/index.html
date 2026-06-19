@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/shared.css">
+<link rel="stylesheet" href="../shared.css">
 <style>
 body {
   background-image:
@@ -98,7 +98,7 @@ body {
 </style>
 </head>
 <body>
-<script src="/nav.js"></script>
+<script src="../nav.js"></script>
 
 <div class="wrap" id="app">
   <div class="state"><div class="spinner"></div>Loading programme…</div>
@@ -324,7 +324,7 @@ function showCancel(token) {
     if (!res) { app.innerHTML = '<div class="cancel-wrap"><div class="cancel-card">Network error. Please try again.</div></div>'; return; }
     app.innerHTML = '<div class="cancel-wrap"><h2>' + (res.ok ? '✅ Registration cancelled' : 'Notice') + '</h2>' +
       '<div class="cancel-card">' + esc(res.message) + '</div>' +
-      '<a class="cancel-back" href="/register">← Back to registration</a></div>';
+      '<a class="cancel-back" href="/eor-forum-2026/register">← Back to registration</a></div>';
   });
 }
 
