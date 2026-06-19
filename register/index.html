@@ -3,357 +3,334 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>National EOR Forum 2026 — Astana, Kazakhstan</title>
-<meta name="description" content="The National Forum on Enhanced Oil Recovery 2026. August 27–28, Rixos President Astana, Kazakhstan. From Field Discovery to Maximum Resource Recovery.">
+<title>Register — National EOR Forum 2026</title>
+<meta name="description" content="Register as a speaker or attendee for the National Forum on Enhanced Oil Recovery 2026, August 27–28, Rixos President Astana.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/_shared.css">
 <style>
-/* ── HOME-SPECIFIC ──────────────────────────────────────────── */
 body {
   background-image:
-    radial-gradient(ellipse 90% 60% at 50% -5%, rgba(200,146,42,.09) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(0,53,112,.35) 0%, transparent 55%);
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(200,146,42,.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(0,53,112,.4) 0%, transparent 55%);
 }
-
-/* Hero */
-.hero {
-  padding: 64px 0 56px;
-  border-bottom: 1px solid var(--gold-rule);
-  margin-bottom: 56px;
-}
-.hero-kicker {
-  display: flex; align-items: center; gap: 10px;
-  font-size: .72rem; font-weight: 700;
-  letter-spacing: .18em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 20px;
-}
-.hero-kicker::before {
-  content: ""; display: block;
-  width: 28px; height: 2px; background: var(--gold);
-}
-.hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 6vw, 3.6rem);
-  font-weight: 700; line-height: 1.05;
-  color: var(--white); letter-spacing: -.02em;
-  margin-bottom: 12px;
-}
-.hero h1 em { color: var(--gold-light); font-style: normal; }
-.hero-tagline {
-  font-size: 1.05rem; color: var(--text-muted);
-  font-style: italic; margin-bottom: 28px;
-}
-.hero-meta {
-  display: flex; flex-wrap: wrap; gap: 8px 28px;
-  font-size: .9rem; color: var(--text-muted);
-  margin-bottom: 36px;
-}
-.hero-meta strong { color: var(--text); }
-.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
-
-/* Stats row */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1px;
-  background: var(--gold-rule);
-  border: 1px solid var(--gold-rule);
-  border-radius: var(--r);
-  overflow: hidden;
-  margin-bottom: 56px;
-}
-.stat {
-  background: var(--navy);
-  padding: 24px 20px;
-  text-align: center;
-}
-.stat-num {
-  font-family: "Playfair Display", serif;
-  font-size: 2.2rem; font-weight: 700;
-  color: var(--gold-light); line-height: 1;
-  margin-bottom: 6px;
-}
-.stat-label {
-  font-size: .78rem; color: var(--text-muted);
-  text-transform: uppercase; letter-spacing: .1em;
-}
-
-/* About */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 56px;
-}
-.about-card {
-  background: var(--card-bg);
+.mode-tabs {
+  display: flex; gap: 8px;
+  background: rgba(255,255,255,.04);
   border: 1px solid var(--card-border);
-  border-radius: var(--r);
-  padding: 28px;
-  box-shadow: var(--shadow);
+  border-radius: 12px; padding: 5px;
+  margin-bottom: 32px;
 }
-.about-card-icon { font-size: 1.8rem; margin-bottom: 14px; }
-.about-card-title {
-  font-weight: 700; font-size: 1.05rem;
-  color: var(--white); margin-bottom: 8px;
+.mode-tab {
+  flex: 1; border: 0; cursor: pointer;
+  font-family: inherit; font-weight: 600; font-size: .9rem;
+  padding: 11px 18px; border-radius: 9px;
+  transition: .2s background, .2s color, .2s box-shadow;
+  color: var(--text-muted); background: transparent;
 }
-.about-card-body { font-size: .9rem; color: var(--text-muted); line-height: 1.7; }
-
-/* Programme */
-.programme { margin-bottom: 56px; }
-.day-block { margin-bottom: 28px; }
-.day-badge {
-  display: inline-block;
+.mode-tab.active {
+  background: var(--gold); color: var(--navy);
+  box-shadow: 0 2px 12px rgba(200,146,42,.35);
+}
+.mode-tab:not(.active):hover { background: rgba(255,255,255,.07); color: var(--text); }
+.day { margin-bottom: 32px; }
+.day-header { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.day-badge-sm {
   font-family: "Playfair Display", serif;
-  font-style: italic; font-size: 1rem;
+  font-size: 1rem; font-weight: 600;
   color: var(--gold-light);
   background: var(--gold-soft);
   border: 1px solid var(--gold-rule);
-  border-radius: 999px;
-  padding: 4px 18px 5px;
-  margin-bottom: 12px;
+  border-radius: 999px; padding: 4px 16px 5px;
+  white-space: nowrap;
 }
-.session-row {
-  display: flex; gap: 14px; align-items: flex-start;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--card-border);
-}
-.session-row:last-child { border-bottom: 0; }
-.session-time {
-  font-size: .82rem; font-weight: 600;
-  color: var(--text-dim); white-space: nowrap;
-  min-width: 90px; padding-top: 2px;
-}
-.session-name {
-  font-weight: 600; font-size: .95rem;
-  color: var(--text); margin-bottom: 2px;
-}
-.session-topics {
-  font-size: .82rem; color: var(--text-muted); line-height: 1.5;
-}
-
-/* Organisers */
-.org-row {
-  display: flex; flex-wrap: wrap; gap: 12px;
-  margin-bottom: 56px;
-}
-.org-pill {
+.day-rule { flex: 1; height: 1px; background: var(--card-border); }
+.session {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: var(--r-sm);
-  padding: 12px 20px;
-  font-size: .88rem; font-weight: 600; color: var(--text);
-}
-
-/* CTA banner */
-.cta-banner {
-  background: linear-gradient(135deg, var(--navy-light) 0%, rgba(200,146,42,.12) 100%);
-  border: 1px solid var(--gold-rule);
   border-radius: var(--r);
-  padding: 36px 32px;
-  display: flex; align-items: center;
-  justify-content: space-between; gap: 24px;
-  flex-wrap: wrap;
-  margin-bottom: 56px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  opacity: 0; transform: translateY(10px);
+  animation: rise .45s ease forwards;
 }
-.cta-banner-text h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.4rem; color: var(--white);
-  margin-bottom: 6px;
+@keyframes rise { to { opacity:1; transform:none; } }
+.session-head {
+  padding: 16px 20px 13px;
+  border-bottom: 1px solid var(--card-border);
+  background: linear-gradient(180deg, rgba(255,255,255,.04) 0%, transparent 100%);
 }
-.cta-banner-text p { font-size: .9rem; color: var(--text-muted); }
-.cta-banner-btns { display: flex; gap: 10px; flex-wrap: wrap; }
-
-@media (max-width: 680px) {
-  .about-grid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: 1fr 1fr; }
-  .cta-banner { flex-direction: column; }
+.session-name { font-weight: 700; font-size: 1.05rem; color: var(--white); margin-bottom: 3px; }
+.session-meta { font-size: .84rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.session-notes { font-size: .82rem; color: var(--text-dim); font-style: italic; margin-top: 5px; }
+.slot { padding: 13px 20px; border-bottom: 1px solid var(--card-border); }
+.slot:last-child { border-bottom: 0; }
+.slot-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.slot-left { display: flex; align-items: center; gap: 14px; }
+.slot-time { font-weight: 600; font-size: .92rem; font-variant-numeric: tabular-nums; color: var(--text); white-space: nowrap; }
+.slot-title { font-size: .88rem; color: var(--text-muted); }
+.slot-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.pill { font-size: .75rem; font-weight: 700; padding: 4px 11px; border-radius: 999px; white-space: nowrap; }
+.pill.open { background: rgba(74,222,128,.12); color: var(--success); }
+.pill.few  { background: rgba(200,146,42,.15); color: var(--gold-light); }
+.pill.full { background: rgba(255,255,255,.06); color: var(--text-dim); }
+.reg-btn {
+  border: 0; cursor: pointer;
+  font-family: inherit; font-weight: 700; font-size: .88rem;
+  padding: 8px 16px; border-radius: var(--r-sm);
+  background: var(--gold); color: var(--navy);
+  transition: .18s background, .18s transform; white-space: nowrap;
 }
+.reg-btn:hover { background: var(--gold-light); }
+.reg-btn:active { transform: scale(.97); }
+.reg-btn[disabled] { background: rgba(255,255,255,.07); color: var(--text-dim); cursor: default; }
+.registered-list { font-size: .8rem; color: var(--text-dim); font-style: italic; margin-top: 6px; }
+.reg-form { display: none; flex-direction: column; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--card-border); }
+.reg-form.open { display: flex; }
+.cancel-wrap { max-width: 500px; margin: 80px auto; text-align: center; padding: 0 20px; }
+.cancel-wrap h2 { font-family: "Playfair Display", serif; font-size: 1.7rem; color: var(--white); margin-bottom: 16px; }
+.cancel-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--r); padding: 24px; box-shadow: var(--shadow); }
+.cancel-back { display: inline-block; margin-top: 22px; color: var(--gold); text-decoration: none; font-weight: 600; font-size: .9rem; }
+.info-banner { background: var(--gold-soft); border: 1px solid var(--gold-rule); border-radius: var(--r-sm); padding: 12px 16px; font-size: .86rem; color: var(--text-muted); margin-bottom: 24px; line-height: 1.5; }
+.info-banner strong { color: var(--gold-light); }
 </style>
 </head>
 <body>
 <script src="/_nav.js"></script>
 
-<div class="wrap">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-kicker">Astana, Kazakhstan · August 2026</div>
-    <h1>National Forum on<br><em>Enhanced Oil Recovery</em></h1>
-    <p class="hero-tagline">«From Field Discovery to Maximum Resource Recovery»</p>
-    <div class="hero-meta">
-      <span>📅 <strong>August 27–28, 2026</strong></span>
-      <span>📍 <strong>Rixos President Astana</strong></span>
-      <span>🏛 <strong>Ministry of Energy of the Republic of Kazakhstan</strong></span>
-    </div>
-    <div class="hero-ctas">
-      <a href="/register" class="btn-gold">Register now →</a>
-      <a href="#programme" class="btn-ghost">View programme</a>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <div class="stats">
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Days</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Sessions</div></div>
-    <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Operators</div></div>
-    <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Attendees</div></div>
-    <div class="stat"><div class="stat-num">30+</div><div class="stat-label">Speakers</div></div>
-    <div class="stat"><div class="stat-num">1%</div><div class="stat-label">RF target gain</div></div>
-  </div>
-
-  <!-- ABOUT -->
-  <section class="section">
-    <div class="section-label">About the Forum</div>
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="about-card-icon">🎯</div>
-        <div class="about-card-title">Strategic objective</div>
-        <div class="about-card-body">Shape a national strategy for enhancing oil recovery and unlocking residual hydrocarbon reserves in Kazakhstan through 2030. Even a 1% increase in recovery factor across major mature fields could unlock tens of millions of tons of additional oil.</div>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">🤝</div>
-        <div class="about-card-title">Who attends</div>
-        <div class="about-card-body">All oil and gas operators, design institutes, scientific organisations, international and local service companies, global EOR experts, CCED members, industry associations, geologists and reservoir engineers.</div>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">📋</div>
-        <div class="about-card-title">Key outcomes</div>
-        <div class="about-card-body">Adoption of the Astana Declaration on EOR. List of priority fields. Formation of a permanent EOR working group. A pilot operations programme for 2027–2030. Proposals to the Subsoil Code to incentivise EOR implementation.</div>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">🗺</div>
-        <div class="about-card-title">2027–2030 Roadmap</div>
-        <div class="about-card-body">The Forum anchors a four-stage national roadmap: inventory of residual reserves, launch of EOR test pilots, introduction of legislative incentives, and full-scale digital monitoring and AI integration across assets.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROGRAMME -->
-  <section class="section programme" id="programme">
-    <div class="section-label">Programme</div>
-
-    <div class="day-block">
-      <div class="day-badge">Day 1 — Wednesday, 27 August</div>
-      <div class="card">
-        <div class="session-row">
-          <div class="session-time">09:00–10:30</div>
-          <div>
-            <div class="session-name">Plenary Session — The Future of Kazakhstan's Oil Production</div>
-            <div class="session-topics">Minister of Energy · Major operator executives · World EOR experts · CCED veterans</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">11:00–13:00</div>
-          <div>
-            <div class="session-name">Session 1 — Global EOR Technologies</div>
-            <div class="session-topics">Polymer flooding · Chemical EOR (SP, ASP, AP) · Gas EOR (CO₂, N₂, WAG, SWAG) · Thermal EOR · Combined EOR · Intelligent fields</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">14:00–17:00</div>
-          <div>
-            <div class="session-name">Session 2 — Oil Production Stimulation Methods</div>
-            <div class="session-topics">Conformance control · Water shut-off · Advanced well completion · Hydraulic fracturing · Acid treatments · Horizontal wells & sidetracks</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">All day</div>
-          <div>
-            <div class="session-name">EOR Expo — Technology Exhibition</div>
-            <div class="session-topics">EOR technologies · Digital & software solutions · Reservoir modelling · EOR equipment & chemicals · Core analysis · Laboratory R&D</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-block">
-      <div class="day-badge">Day 2 — Thursday, 28 August</div>
-      <div class="card">
-        <div class="session-row">
-          <div class="session-time">09:00–12:00</div>
-          <div>
-            <div class="session-name">EOR Hackathon — Practical Solutions for Kazakhstan's Mature Fields</div>
-            <div class="session-topics">Up to 10 operators present pilot assets · EOR teams deliver screening, implementation concept, lab programme, incremental production forecast and economic assessment</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">13:00–14:00</div>
-          <div>
-            <div class="session-name">Session 4 — Digital Field Development</div>
-            <div class="session-topics">Artificial intelligence · Digital core · Digital twins · Automated production management · Predictive analysis</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">14:30–16:00</div>
-          <div>
-            <div class="session-name">Session 5 — Hard-to-recover Reserves</div>
-            <div class="session-topics">Carbonate reservoirs · Low permeability formations · Heavy and extra-heavy oil · Deep reservoirs</div>
-          </div>
-        </div>
-        <div class="session-row">
-          <div class="session-time">16:00–17:00</div>
-          <div>
-            <div class="session-name">Ministry of Energy Roundtable</div>
-            <div class="session-topics">National Programme for Increasing RF by 2030 · Regulatory incentives · Funding mechanisms · Adoption of the Astana Declaration</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ORGANISERS -->
-  <section class="section">
-    <div class="section-label">Organised by</div>
-    <div class="org-row">
-      <div class="org-pill">🏛 Ministry of Energy of the Republic of Kazakhstan</div>
-      <div class="org-pill">⚡ Association of Legal Entities «KAZENERGY»</div>
-      <div class="org-pill">🔬 CCED RoK — 30th Anniversary</div>
-    </div>
-  </section>
-
-  <!-- CTA BANNER -->
-  <div class="cta-banner">
-    <div class="cta-banner-text">
-      <h3>Join the Forum</h3>
-      <p>Register as a speaker, attendee, or explore sponsorship and exhibition opportunities.</p>
-    </div>
-    <div class="cta-banner-btns">
-      <a href="/register" class="btn-gold">Register now →</a>
-      <a href="/sponsor" class="btn-ghost">Sponsor / Exhibit</a>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <section class="section">
-    <div class="section-label">Contact</div>
-    <div class="card">
-      <div style="display:flex;flex-wrap:wrap;gap:28px">
-        <div>
-          <div style="font-size:.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px">Technical Programme & EOR Expo</div>
-          <div style="font-weight:600;color:var(--white);margin-bottom:3px">Dr. Marat Sagyndikov</div>
-          <div style="font-size:.9rem;color:var(--text-muted)">
-            📧 <a href="mailto:sagyndikov.marat.s@gmail.com" style="color:var(--gold)">sagyndikov.marat.s@gmail.com</a><br>
-            📱 <a href="https://wa.me/77019797555" style="color:var(--gold)">+7 701 979 7555</a> (WhatsApp)
-          </div>
-        </div>
-        <div>
-          <div style="font-size:.78rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px">Partnership & Sponsorship</div>
-          <div style="font-weight:600;color:var(--white);margin-bottom:3px">KAZENERGY Secretariat</div>
-          <div style="font-size:.9rem;color:var(--text-muted)">Contact via the <a href="/sponsor" style="color:var(--gold)">Sponsor page</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+<div class="wrap" id="app">
+  <div class="state"><div class="spinner"></div>Loading programme…</div>
 </div>
 
 <footer class="site-footer">
   National Forum on Enhanced Oil Recovery 2026 · Rixos President Astana, Kunayeva 7, Astana, Kazakhstan<br>
-  Organised by the Ministry of Energy of the Republic of Kazakhstan & KAZENERGY
+  Technical programme: <a href="mailto:sagyndikov.marat.s@gmail.com">sagyndikov.marat.s@gmail.com</a> ·
+  <a href="https://wa.me/77019797555">+7 701 979 7555</a>
 </footer>
 
+<script>
+// ================================================================
+var API = "https://script.google.com/macros/s/AKfycbwDuuymjyF2Dws9OQO7xIzBnscwFkP9dU_8hwdH0IUB9vnYb47wnREQsheuFPWnYjfJ/exec";
+// ================================================================
+var app = document.getElementById("app");
+var currentMode = "speaker";
+
+function jsonp(url, cb) {
+  var fn = "_cb" + Date.now() + Math.floor(Math.random() * 9999);
+  var s  = document.createElement("script");
+  var timer = setTimeout(function() { cleanup(); cb(null); }, 40000);
+  window[fn] = function(data) { cleanup(); cb(data); };
+  s.onerror  = function()     { cleanup(); cb(null); };
+  function cleanup() { clearTimeout(timer); delete window[fn]; if (s.parentNode) s.parentNode.removeChild(s); }
+  s.src = url + (url.indexOf("?") >= 0 ? "&" : "?") + "callback=" + fn;
+  document.head.appendChild(s);
+}
+
+var params = new URLSearchParams(window.location.search);
+var cancelToken = params.get("cancel");
+if (cancelToken) { showCancel(cancelToken); } else { loadSlots(); }
+
+function loadSlots(attempt) {
+  attempt = attempt || 1;
+  app.innerHTML = attempt === 1
+    ? '<div class="state"><div class="spinner"></div>Loading programme…</div>'
+    : '<div class="state"><div class="spinner"></div>Server warming up, one moment…</div>';
+  jsonp(API + "?action=getData", function(data) {
+    if (!data) {
+      if (attempt < 3) { loadSlots(attempt + 1); return; }
+      app.innerHTML = '<div class="state">⚠️ Could not load the programme. Please check your connection.<br><br><button class="reg-btn" style="margin:0 auto" onclick="loadSlots(1)">Retry</button></div>';
+      return;
+    }
+    render(data);
+  });
+}
+
+function render(data) {
+  var slots = data.slots || [];
+  var html = buildHero() + buildTabs();
+  html += '<div id="mode-speaker">' + buildModeContent(slots, "speaker") + '</div>';
+  html += '<div id="mode-attendee" style="display:none">' + buildModeContent(slots, "attendee") + '</div>';
+  app.innerHTML = html;
+}
+
+function buildHero() {
+  return '<section class="page-hero">' +
+    '<div class="page-eyebrow">Registration</div>' +
+    '<h1 class="page-title">Register for the <span>Forum</span></h1>' +
+    '<p class="page-subtitle">Submit a speaker proposal or secure your place as an attendee at Kazakhstan\'s national EOR forum, August 27–28, 2026.</p>' +
+    '</section>';
+}
+
+function buildTabs() {
+  return '<div class="mode-tabs">' +
+    '<button class="mode-tab active" id="tab-speaker"  onclick="switchMode(\'speaker\')">🎤 Speaker Registration</button>' +
+    '<button class="mode-tab"        id="tab-attendee" onclick="switchMode(\'attendee\')">🪑 Attendee Registration</button>' +
+    '</div>';
+}
+
+function switchMode(mode) {
+  currentMode = mode;
+  document.getElementById("mode-speaker").style.display  = mode === "speaker"  ? "" : "none";
+  document.getElementById("mode-attendee").style.display = mode === "attendee" ? "" : "none";
+  document.getElementById("tab-speaker").classList.toggle("active",  mode === "speaker");
+  document.getElementById("tab-attendee").classList.toggle("active", mode === "attendee");
+}
+
+function buildModeContent(slots, mode) {
+  var filtered = slots.filter(function(s) { return s.mode === mode || s.mode === "both"; });
+  var banner = mode === "speaker"
+    ? '<div class="info-banner"><strong>Speakers:</strong> Select a session and time slot, then provide your presentation details. You will receive a confirmation email with a calendar invite.</div>'
+    : '<div class="info-banner"><strong>Attendees:</strong> Select the day(s) you plan to attend. Attendance is subject to confirmation by the organising committee.</div>';
+  if (!filtered.length) return banner + '<div class="state" style="padding:40px 0">No slots available yet. Check back soon.</div>';
+  var days = {}, dayOrder = [];
+  filtered.forEach(function(s) {
+    if (!days[s.dateISO]) { days[s.dateISO] = { label: s.dateLabel, sessions: {}, sessionOrder: [] }; dayOrder.push(s.dateISO); }
+    var d = days[s.dateISO];
+    if (!d.sessions[s.session]) { d.sessions[s.session] = { location: s.location, notes: s.notes, items: [] }; d.sessionOrder.push(s.session); }
+    d.sessions[s.session].items.push(s);
+  });
+  var html = banner, delay = 0;
+  dayOrder.forEach(function(iso) {
+    var d = days[iso];
+    html += '<div class="day"><div class="day-header"><div class="day-badge-sm">' + esc(d.label) + '</div><div class="day-rule"></div></div>';
+    d.sessionOrder.forEach(function(sname) {
+      var sess = d.sessions[sname];
+      var totalOpen = sess.items.reduce(function(acc, s) { return acc + s.remaining; }, 0);
+      html += '<div class="session" style="animation-delay:' + delay + 'ms"><div class="session-head">';
+      delay += 60;
+      html += '<div class="session-name">' + esc(sname) + '</div>';
+      html += '<div class="session-meta">';
+      if (sess.location) html += '<span>📍 ' + esc(sess.location) + '</span>';
+      html += '<span>' + totalOpen + ' slot' + (totalOpen !== 1 ? 's' : '') + ' available</span></div>';
+      if (sess.notes) html += '<div class="session-notes">' + esc(sess.notes) + '</div>';
+      html += '</div>';
+      sess.items.forEach(function(s) { html += buildSlot(s, mode); });
+      html += '</div>';
+    });
+    html += '</div>';
+  });
+  return html;
+}
+
+function buildSlot(s, mode) {
+  var full = s.remaining <= 0;
+  var few  = s.remaining <= 2 && !full;
+  var pcls = full ? "full" : (few ? "few" : "open");
+  var ptxt = full ? "Full" : (s.remaining + " available");
+  var uid  = mode + "-" + s.id;
+  var regList = (s.registered && s.registered.length)
+    ? '<div class="registered-list">Registered: ' + s.registered.map(esc).join(", ") + '</div>' : "";
+  var formHtml = full ? "" : buildForm(uid, s, mode);
+  return '<div class="slot" id="slot-' + uid + '">' +
+    '<div class="slot-row">' +
+    '<div class="slot-left"><span class="slot-time">' + esc(s.timeStart) + ' – ' + esc(s.timeEnd) + '</span>' +
+    (s.slotLabel ? '<span class="slot-title">' + esc(s.slotLabel) + '</span>' : '') + '</div>' +
+    '<div class="slot-right"><span class="pill ' + pcls + '">' + ptxt + '</span>' +
+    (full ? '<button class="reg-btn" disabled>Full</button>' : '<button class="reg-btn" onclick="openForm(\'' + uid + '\')">Register</button>') +
+    '</div></div>' + regList + formHtml + '</div>';
+}
+
+function buildForm(uid, s, mode) {
+  var speakerExtras = mode === "speaker" ? (
+    '<div class="form-group"><div class="form-label">Presentation title *</div>' +
+    '<input id="title-' + uid + '" placeholder="e.g. Polymer flooding results at Tengiz Field"></div>' +
+    '<div class="form-row">' +
+    '<div class="form-group"><div class="form-label">Topic / Session *</div>' +
+    '<select id="topic-' + uid + '"><option value="">— Select —</option>' +
+    '<option>Polymer flooding</option><option>Chemical EOR (SP/ASP/AP)</option>' +
+    '<option>Gas EOR (CO₂, N₂, WAG)</option><option>Thermal EOR</option>' +
+    '<option>Combined EOR</option><option>Conformance control</option>' +
+    '<option>Hydraulic fracturing</option><option>Digital / AI field development</option>' +
+    '<option>Hard-to-recover reserves</option><option>EOR Hackathon</option><option>Other</option>' +
+    '</select></div>' +
+    '<input type="hidden" id="duration-' + uid + '" value="">' +
+    '</div>' +
+    '<div class="form-group"><div class="form-label">Abstract (min. 50 words) *</div>' +
+    '<textarea id="abstract-' + uid + '" placeholder="Summarise your presentation…"></textarea></div>'
+  ) : "";
+
+  return '<div class="reg-form" id="form-' + uid + '">' +
+    '<div class="form-row">' +
+    '<div class="form-group"><div class="form-label">First & Last name *</div><input id="name-' + uid + '" placeholder="Dr. Ivan Petrov" autocomplete="name"></div>' +
+    '<div class="form-group"><div class="form-label">Job title</div><input id="jobtitle-' + uid + '" placeholder="Senior Reservoir Engineer"></div>' +
+    '</div><div class="form-row">' +
+    '<div class="form-group"><div class="form-label">Company *</div><input id="company-' + uid + '" placeholder="KazMunayGas" autocomplete="organization"></div>' +
+    '<div class="form-group"><div class="form-label">Country</div><input id="country-' + uid + '" placeholder="Kazakhstan" autocomplete="country-name"></div>' +
+    '</div><div class="form-row">' +
+    '<div class="form-group"><div class="form-label">Email *</div><input id="email-' + uid + '" type="email" placeholder="name@company.com" autocomplete="email"></div>' +
+    '<div class="form-group"><div class="form-label">Phone / WhatsApp</div><input id="phone-' + uid + '" placeholder="+7 700 000 0000" autocomplete="tel"></div>' +
+    '</div>' + speakerExtras +
+    '<div class="form-error" id="err-' + uid + '"></div>' +
+    '<div class="form-row" style="margin-top:4px">' +
+    '<button class="btn-ghost" style="flex:0 0 auto" onclick="closeForm(\'' + uid + '\')">Cancel</button>' +
+    '<button class="btn-gold" style="flex:1" id="go-' + uid + '" onclick="submitForm(\'' + uid + '\',\'' + mode + '\')">Confirm Registration</button>' +
+    '</div></div>';
+}
+
+function openForm(uid) {
+  document.querySelectorAll(".reg-form.open").forEach(function(el) { if (el.id !== "form-" + uid) el.classList.remove("open"); });
+  document.getElementById("form-" + uid).classList.add("open");
+  document.getElementById("name-" + uid).focus();
+}
+function closeForm(uid) { document.getElementById("form-" + uid).classList.remove("open"); }
+
+function submitForm(uid, mode) {
+  var name     = val("name-"     + uid);
+  var jobtitle = val("jobtitle-" + uid);
+  var company  = val("company-"  + uid);
+  var country  = val("country-"  + uid);
+  var email    = val("email-"    + uid);
+  var phone    = val("phone-"    + uid);
+  var title    = mode === "speaker" ? val("title-"    + uid) : "";
+  var topic    = mode === "speaker" ? val("topic-"    + uid) : "";
+  var duration = mode === "speaker" ? val("duration-" + uid) : "";
+  var abstract = mode === "speaker" ? val("abstract-" + uid) : "";
+  var goBtn    = document.getElementById("go-" + uid);
+  document.getElementById("err-" + uid).style.display = "none";
+  if (!name.trim())    { showErr(uid, "Please enter your full name."); return; }
+  if (!company.trim()) { showErr(uid, "Please enter your company or organisation."); return; }
+  if (!email.trim() || email.indexOf("@") < 0) { showErr(uid, "Please enter a valid email address."); return; }
+  if (mode === "speaker") {
+    if (!title.trim())           { showErr(uid, "Please enter a presentation title."); return; }
+    if (!topic)                  { showErr(uid, "Please select a topic / session."); return; }
+    if (abstract.trim().length < 50) { showErr(uid, "Abstract must be at least 50 characters."); return; }
+  }
+  goBtn.disabled = true; goBtn.textContent = "Sending…";
+  var slotId = uid.replace(/^(speaker|attendee)-/, "");
+  var url = API + "?action=register" +
+    "&slotId="   + enc(slotId)   + "&mode="     + enc(mode)     +
+    "&name="     + enc(name)     + "&jobtitle="  + enc(jobtitle) +
+    "&company="  + enc(company)  + "&country="   + enc(country)  +
+    "&email="    + enc(email)    + "&phone="     + enc(phone)    +
+    "&title="    + enc(title)    + "&topic="     + enc(topic)    +
+    "&duration=" + enc(duration) + "&abstract="  + enc(abstract);
+  jsonp(url, function(res) {
+    if (!res) { goBtn.disabled = false; goBtn.textContent = "Confirm Registration"; showErr(uid, "Network error — please try again."); return; }
+    if (res.ok) {
+      document.getElementById("slot-" + uid).innerHTML = '<div class="form-success">✅ ' + esc(res.message) + '</div>';
+    } else {
+      goBtn.disabled = false; goBtn.textContent = "Confirm Registration"; showErr(uid, res.message);
+    }
+  });
+}
+
+function showErr(uid, msg) { var el = document.getElementById("err-" + uid); el.textContent = msg; el.style.display = "block"; }
+
+function showCancel(token) {
+  app.innerHTML = '<div class="cancel-wrap"><h2>Cancellation</h2><div class="cancel-card"><div class="spinner" style="width:22px;height:22px;border-width:2px;margin-bottom:10px"></div>Processing…</div></div>';
+  jsonp(API + "?action=cancel&t=" + enc(token), function(res) {
+    if (!res) { app.innerHTML = '<div class="cancel-wrap"><div class="cancel-card">Network error. Please try again.</div></div>'; return; }
+    app.innerHTML = '<div class="cancel-wrap"><h2>' + (res.ok ? '✅ Registration cancelled' : 'Notice') + '</h2>' +
+      '<div class="cancel-card">' + esc(res.message) + '</div>' +
+      '<a class="cancel-back" href="/register">← Back to registration</a></div>';
+  });
+}
+
+function val(id) { var el = document.getElementById(id); return el ? el.value.trim() : ""; }
+function enc(s) { return encodeURIComponent(s == null ? "" : s); }
+function esc(s) { return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+</script>
 </body>
 </html>
