@@ -1,16 +1,18 @@
-// Shared navigation — included in all pages via <script src="_nav.js">
 (function() {
+  const BASE = "/eor-forum-2026";
+
   const pages = [
-    { href: "/",         label: "About"    },
-    { href: "/register", label: "Register" },
-    { href: "/sponsor",  label: "Sponsor"  },
-    { href: "/travel",   label: "Travel"   },
+    { href: BASE + "/",         label: "About"    },
+    { href: BASE + "/register", label: "Register" },
+    { href: BASE + "/sponsor",  label: "Sponsor"  },
+    { href: BASE + "/travel",   label: "Travel"   },
   ];
 
-  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  const path = window.location.pathname.replace(/\/+$/, "");
   const isActive = (href) => {
-    if (href === "/") return path === "" || path === "/";
-    return path === href || path.startsWith(href + "/");
+    const h = href.replace(/\/+$/, "");
+    if (h === BASE) return path === BASE || path === BASE + "/index.html";
+    return path === h || path.startsWith(h + "/");
   };
 
   const links = pages.map(p =>
@@ -20,7 +22,7 @@
   const html = `
 <nav class="site-nav" id="site-nav">
   <div class="nav-inner">
-    <a href="/" class="nav-brand">
+    <a href="${BASE}/" class="nav-brand">
       <span class="nav-brand-flag">🛢</span>
       <span class="nav-brand-text"><strong>EOR</strong> Forum 2026</span>
     </a>
@@ -28,7 +30,7 @@
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="nav-links">${links}</div>
-    <a href="/register" class="nav-cta">Register →</a>
+    <a href="${BASE}/register" class="nav-cta">Register →</a>
   </div>
 </nav>`;
 
